@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(43, 43, 43);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 15px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+	font-size: 19px;
+	border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+	border-bottom: 3px solid rgb(255, 241, 41);
+}
+
+.topnav a.active {
+	border-bottom: 3px solid rgb(255, 241, 41);
+}
+
+.container{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#rec1{
+	background-color
+}
+
+.images{
+	height: 350px;
+	width: 550px;
+	display: grid;
+	grid-template-rows: 3fr 3fr 3fr 3fr;
+	grid-template-columns: 4fr 4fr 4fr;
+	grid-template-areas: 
+	"image1 image2 image4"
+	"image1 image2 image5"
+	"image1 image3 image5"
+	"image1 image3 image5";
+	position: absolute;
+}
+
+#image1 {
+	background-image: url("images/82E05BA0-26F6-456A-8D17-2AB4F2267588.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-area: image1;
+}
+
+#image2{
+	background-image: url("images/59DD8667-A97D-4338-A549-182BBA113C10.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-area: image2;
+}
+
+#image3{
+	background-color: skyblue;
+	grid-area: image3;
+}
+
+#image4{
+	background-color: springgreen;
+	grid-area: image4;
+}
+
+#image5{
+	background-color: wheat;
+	grid-area: image5;
+}
+
+.context{
+	border-style: hidden;
+	color: black;
+	height: 270px;
+	width: 430px;
+	background-color: white;
+	position: absolute;
+	transform: translate(93%, 83%);
+	padding: 10px;
+}
+
+#title{
+	/* font-family: Copperplate Gothic Light; */
+	font-family: Brush Script MT, cursive;
+	font-size: 40px;
+	padding-bottom: 5px;
+}
+#intro{
+	font-family:Papyrus, fantasy;
+	font-size: 14px;
+}
+
+.rec1{
+	border-style: hidden;
+	background-color: yellow;
+	position: absolute;
+	width: 430px;
+	height: 280px;
+	transform: translate(90%, 75%);
+}
+
+img{
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	padding: 5px;
+	width: 200px;
+}
+
+#image6{
+	transform: translate(3600%, 400%);
+}
+
+#image7{
+	transform: translate(4300%, 750%);
+}
+
+#image8{
+	transform: translate(3300%, 1100%);
+}
