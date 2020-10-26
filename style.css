@@ -1,4 +1,4 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Carter+One&family=Caveat&family=Lemonada:wght@300;400;500;600;700&family=Lobster&family=Rancho&display=swap');*{
 	margin: 0;
 	padding: 0;
 }
@@ -13,7 +13,8 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 15px;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: 'Carter One', cursive;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -22,9 +23,9 @@ body{
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 25px;
+	padding: 14px 15px;
 	text-decoration: none;
-	font-size: 19px;
+	font-size: 17px;
 	border-bottom: 3px solid transparent;
 }
 
@@ -32,17 +33,15 @@ body{
 	border-bottom: 3px solid rgb(255, 241, 41);
 }
 
-.topnav a.active {
-	border-bottom: 3px solid rgb(255, 241, 41);
-}
-
+/* Home page */
 .container{
 	position: absolute;
 	top: 10px;
 	left: 10px;
 }
+
 #rec1{
-	background-color
+	background-color:  rgb(255, 241, 41);
 }
 
 .images{
@@ -100,14 +99,13 @@ body{
 }
 
 #title{
-	/* font-family: Copperplate Gothic Light; */
-	font-family: Brush Script MT, cursive;
+	font-family: 'Rancho', cursive;
 	font-size: 40px;
 	padding-bottom: 5px;
 }
 #intro{
-	font-family:Papyrus, fantasy;
-	font-size: 14px;
+	font-family: 'Caveat', cursive; 
+	font-size: 17px;
 }
 
 .rec1{
@@ -137,3 +135,79 @@ img{
 #image8{
 	transform: translate(3300%, 1100%);
 }
+
+
+/* CV Page */
+#list{
+	border-style: hidden;
+	background-color: rgb(58, 56, 56);
+	position: absolute;
+	border-radius: 15px;
+	width: 100px;
+	height: 270px;
+	transform: translate(120%, 25%); 
+	z-index: 3;
+}
+
+#rec2{
+	border-style: hidden;
+	background-color: rgb(24, 23, 23);
+	position: absolute;
+	border-radius: 3.5px;
+	width: 440px;
+	height: 540px;
+	transform: translate(45%, 3%);
+}
+
+.input{
+	border-style: hidden;
+	background-color: rgb(53, 50, 50);
+	position: absolute;
+	border-radius: 3.5px;
+	width: 430px;
+	height: 540px;
+	transform: translate(55%, 7%);
+	z-index: 2;
+}
+
+#image9{
+	background-color: darkseagreen;
+	border-radius: 3.5px;
+	width: 430px;
+	height: 360px;
+	grid-area: image9;
+}
+
+#name{
+	color: rgb(218, 187, 17);
+	font-family: 'Bubblegum Sans', cursive;
+	grid-area: name;
+	display: flex;
+	justify-content: center;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 2fr;
+	grid-template-areas: 
+	"n1"
+	"n2";
+}
+
+#n1{
+	grid-area: n1;
+}
+
+#n2{
+	grid-area: n2;
+}
+
+.right{
+	border-style: hidden;
+	background-color: rgb(58, 56, 56);
+	position: absolute;
+	border-radius: 3.5px;
+	width: 850px;
+	height: 510px;
+	transform: translate(78%, 10%);
+}
+
+
