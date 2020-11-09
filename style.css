@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Carter+One&family=Caveat&family=Lemonada:wght@300;400;500;600;700&family=Lobster&family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind+Guntur:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
 	margin: 0;
 	padding: 0;
+
 }
 
 body{
@@ -36,7 +38,7 @@ body{
 }
 
 /* Home page */
-.container{
+.container1{
 	position: absolute;
 	top: 10px;
 	left: 10px;
@@ -61,31 +63,37 @@ body{
 }
 
 #image1 {
-	background-image: url("images/82E05BA0-26F6-456A-8D17-2AB4F2267588.JPG");
+	background-image: url("images/pexels-photo-2228580.jpeg");
 	background-position: center;
 	background-size: cover;
 	grid-area: image1;
 }
 
 #image2{
-	background-image: url("images/59DD8667-A97D-4338-A549-182BBA113C10.JPG");
+	background-image: url("images/pexels-photo-3764022.jpeg");
 	background-position: center;
 	background-size: cover;
 	grid-area: image2;
 }
 
 #image3{
-	background-color: skyblue;
+	background-image: url("images/pexels-photo-4173624.jpeg");
+	background-position: center;
+	background-size: cover;
 	grid-area: image3;
 }
 
 #image4{
-	background-color: springgreen;
+	background-image: url("images/pexels-photo-775033.jpeg");
+	background-position: center;
+	background-size: cover;
 	grid-area: image4;
 }
 
 #image5{
-	background-color: wheat;
+	background-image: url("images/pexels-photo-1699161.jpeg");
+	background-position: center;
+	background-size: cover;
 	grid-area: image5;
 }
 
@@ -96,7 +104,7 @@ body{
 	width: 430px;
 	background-color: white;
 	position: absolute;
-	transform: translate(93%, 83%);
+	transform: translate(113%, 100%);
 	padding: 10px;
 }
 
@@ -107,7 +115,7 @@ body{
 }
 #intro{
 	font-family: 'Caveat', cursive; 
-	font-size: 17px;
+	font-size: 18px;
 }
 
 .rec1{
@@ -116,7 +124,7 @@ body{
 	position: absolute;
 	width: 430px;
 	height: 280px;
-	transform: translate(90%, 75%);
+	transform: translate(110%, 93%);
 }
 
 img{
@@ -126,21 +134,24 @@ img{
 	width: 200px;
 }
 
+#image10{
+	transform: translate(430%, 40%);
+}
+
 #image6{
-	transform: translate(3600%, 400%);
+	transform: translate(510%, 20%);
 }
 
 #image7{
-	transform: translate(4300%, 750%);
+	transform: translate(460%, 40%);
+	
 }
 
 #image8{
-	transform: translate(3300%, 1100%);
+	transform: translate(540%, 10%);
 }
 
-
-/* CV Page */
-/* About Page */
+/* CV Page -- layout*/
 #list{
 	border-style: hidden;
 	background-color: rgb(58, 56, 56);
@@ -150,6 +161,15 @@ img{
 	height: 270px;
 	transform: translate(120%, 25%); 
 	z-index: 3;
+
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+#list > img{
+	width: 50px;
 }
 
 #rec2{
@@ -162,7 +182,7 @@ img{
 	transform: translate(45%, 3%);
 }
 
-.input{
+.input1{
 	border-style: hidden;
 	background-color: rgb(53, 50, 50);
 	position: absolute;
@@ -174,11 +194,13 @@ img{
 }
 
 #image9{
-	background-color: darkseagreen;
+	background-image: url(images/fashion-person-hands-woman.jpg);
 	border-radius: 3.5px;
 	width: 430px;
 	height: 360px;
 	grid-area: image9;
+	background-size: cover; 
+
 }
 
 #name{
@@ -214,11 +236,20 @@ img{
 	position: absolute;
 }
 
+/* CV Page -- About Page */
+
+hr{
+	color: white;
+	border-style: solid;
+	border-width: 2px;
+	width: 90%;
+}
+
 .title{
 	font-family: 'Anton', sans-serif;
 	color: rgb(221, 221, 58);
 	padding-left: 20px;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .sub-title{
@@ -281,7 +312,17 @@ img{
 	padding: 10px;
 }
 
-/* Resume Page */
+.invisible {
+	display: none;
+}
+
+/* CV Page -- Resume Page */
+#resume{
+	height: 100%;
+	overflow: auto;
+	position: absolute;
+}
+
 #Education > h2{
 	font-size: 20px;
 	padding-left: 3px;
@@ -295,6 +336,339 @@ img{
 	align-items: center;
 }
 
+.content{
+	padding-bottom: 2rem;
+} 
 
+/* Contact Page */
+.font{
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(images/city-cars-traffic-lights.jpg);
+	background-size: cover; 
+}
 
+.contact .inner{
+	max-width: 800px;
+	text-align: center;
+}
+
+.contact .inner h2{
+	font-size: 36px;
+	font-weight: 500;
+	color:#fff;
+}
+
+.contact .inner p{
+	font-weight: 300;
+	color: #fff;
+
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container .contactInfo{
+	width: 50%;
+	display:flex;
+	flex-direction: column;
+}
+
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.container .contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+	font-weight: 500;
+	color: #00bcd4;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+
+.contactForm h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span, 
+.contactForm .inputBox textarea:focus ~ span, 
+.contactForm .inputBox textarea:valid ~ span{
+	color: rgb(240, 64, 64);
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+@media (max-width: 991px){
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactInfo{
+		margin-bottom: 40px;
+	}
+	.container .contactInfo,
+	.contactForm
+	{
+		width: 100%;
+	}
+}
+
+/* Work Page */
+#ToAll{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+  
+#top{
+	font-size: 2.5rem;
+	font-family: 'Montserrat';
+	font-weight: normal;
+	color: rgb(161, 154, 154);
+	text-align: center;
+	margin: 2rem 0;
+}
+
+a.five:link {color:white;text-decoration:none;}
+a.five:visited {color:white;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 80rem;
+}
+
+.cols{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.col{
+	width: calc(25% - 2rem);
+	margin: 1rem;
+	cursor: pointer;
+}
+
+.container2{
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+			perspective: 1000px;
+}
+
+.front,
+.back{
+	background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+	border-radius: 10px;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back{
+	background: #cedce7;
+	background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+	background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+	background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+	opacity: .6;
+	background-color: #000;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	border-radius: 10px;
+}
+.container2:hover .front,
+.container2:hover .back{
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.inner2{
+	-webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+			transform: translateY(-50%) translateZ(60px) scale(0.94);
+	top: 50%;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 2rem;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	outline: 1px solid transparent;
+	-webkit-perspective: inherit;
+			perspective: inherit;
+	z-index: 2;
+}
+
+.container2 .back{
+	-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+.container2 .front{
+	-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+.container2:hover .back{
+	-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+.container2:hover .front{
+	-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+.front .inner2 p{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.front .inner2 p:after{
+	content: '';
+	width: 4rem;
+	height: 2px;
+	position: absolute;
+	background: #C6D4DF;
+	display: block;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -.75rem;
+}
+
+.front .inner2 span{
+	color: rgba(255,255,255,0.7);
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
 

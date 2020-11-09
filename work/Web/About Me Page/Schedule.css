@@ -1,0 +1,60 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding: 12px;
+    
+}
+td{
+    font-size:15.5px;
+}
+
+
+tr.days{
+    background-color: rgba(135, 172, 228, 0.788);
+}
+
+tr.lunch{
+    background-color: rgb(170, 169, 169);
+}
+
+td.algebra{
+    background: rgb(248, 172, 144);
+}
+
+td.chemistry{
+    background: rgb(236, 202, 139);
+}
+
+td.writing{
+    background-color: rgb(252, 242, 184);
+}
+
+td.art{
+    background-color: rgb(193, 243, 193);
+}
+
+td.english{
+    background-color: rgb(202, 216, 202);
+}
+
+td.history{
+    background-color: rgb(189, 233, 250);
+}
+
+td.web{
+    background-color: rgb(223, 207, 236);
+}
+
+td.MUN{
+    background-color: rgb(196, 168, 224);
+}
+
+td.SAT{
+    background-color: rgb(250, 212, 219);
+}
+
+td.DT{
+    background-color: rgb(171, 205, 206);
+}

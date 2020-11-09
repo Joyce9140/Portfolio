@@ -1,0 +1,56 @@
+body {
+    background-color: lightblue;
+}
+
+h1{
+    background-color: darkblue;
+    border: 5px solid darkblue;
+    padding: 5px;
+    /*padding-right: 10px; */
+    color: white;
+    text-align: center;
+}
+
+div.introduciton{
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div.interest{
+    display: inline-block;
+    width: 370px;
+    height: 170px;
+    padding: 5px;
+    border: 5px solid purple;
+    background-color: rgb(203, 209, 214);
+}
+
+h2.head-two {
+    padding-left: 25px;
+}
+
+h2.schedule {
+    display: inline-block;
+    background-color: lemonchiffon;
+    border: 5px solid darkgreen;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    top: -100px;
+}
+
+img{
+    border-radius: 8px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+
