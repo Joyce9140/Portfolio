@@ -228,12 +228,10 @@ img{
 .right{
 	border-style: hidden;
 	background-color: rgb(58, 56, 56);
-	position: absolute;
 	border-radius: 3.5px;
 	width: 850px;
 	height: 510px;
 	transform: translate(78%, 10%);
-	position: absolute;
 }
 
 /* CV Page -- About Page */
@@ -339,6 +337,14 @@ hr{
 .content{
 	padding-bottom: 2rem;
 } 
+
+@media (max-width: 600px){
+	.right {
+		width: 420px;
+		overflow: auto;
+		transform: translate()	
+	}
+}
 
 /* Contact Page */
 .font{
@@ -671,4 +677,24 @@ a.five:hover {text-decoration:underline;}
 	font-family: 'Montserrat';
 	font-weight: 300;
 }
+
+@media screen and (max-width: 64rem){
+	.col{
+	  width: calc(33.333333% - 2rem);
+	}
+  }
+  
+  @media screen and (max-width: 48rem){
+	.col{
+	  width: calc(50% - 2rem);
+	}
+  }
+  
+  @media screen and (max-width: 32rem){
+	.col{
+	  width: 100%;
+	  margin: 0 0 2rem 0;
+	}
+  }
+  
 
