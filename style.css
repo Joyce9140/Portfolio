@@ -15,6 +15,7 @@ body{
 .topnav {
 	overflow: hidden;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin-right: 15px;
 	font-family: 'Carter One', cursive;
@@ -97,6 +98,17 @@ body{
 	grid-area: image5;
 }
 
+#image11{
+	background-image: url("images/pexels-photo-235721.jpeg");
+	background-position: center;
+	background-size: cover;
+	grid-area: image11;
+	display: none;
+}
+
+.background{
+	display:none;
+}
 .context{
 	border-style: hidden;
 	color: black;
@@ -149,6 +161,56 @@ img{
 
 #image8{
 	transform: translate(540%, 10%);
+}
+
+@media only screen and (max-width: 600px){
+	.image-box{
+		display:none;
+	}
+
+	.container1{
+		position: relative;
+	}
+
+	.topnav{
+		padding: 0px;
+	}
+
+	#image11{
+		display: block;
+	}
+	.images{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"image1 image2 image2"
+		"image3 image3 image4"
+		"image5 image11 image11";
+	}
+
+	.background{
+		background-image: url(images/ALeq47.jpg);
+		background-size: cover;
+		opacity: 0.7;
+		display:block;
+	}
+
+	.rec1{
+		width: 350px;
+		height: 340px;
+		transform: translate(27%, 20%);
+	}
+
+	.context{
+		height: 320px;
+		width: 330px;
+		transform: translate(35%, 30%);
+	}
+
+	#intro{
+		font-size: 17px;
+	}
 }
 
 /* CV Page -- layout*/
