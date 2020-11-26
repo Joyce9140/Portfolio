@@ -29,7 +29,7 @@ body{
 	text-align: center;
 	padding: 14px 15px;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	border-bottom: 3px solid transparent;
 }
 
@@ -164,72 +164,6 @@ img{
 	transform: translate(540%, 10%);
 }
 
-@media only screen and (max-width: 1024px){
-	.topnav a{
-		font-size: 2.7em;
-		display: flex;
-		justify-content: center;
-
-	}
-	.image-box{
-		display:none;
-	}
-
-	.container1{
-		position: absolute;
-	}
-
-	#image11{
-		display: block;
-	}
-	.images{
-		width: 100vw;
-		height: 100vh;
-		display: grid;
-		position: absolute;
-		transform: translate(0%, 7%);
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: 
-		"image1 image2 image2"
-		"image3 image3 image4"
-		"image5 image11 image11";
-	}
-
-	.background{
-		background-image: url(images/ALeq47.jpg);
-		background-size: cover;
-		opacity: 0.2;
-		display:block;
-		position: absolute;
-		transform: translate(0%, 7%);	
-		width: 100vw;
-		height: 100vh;
-	}
-
-	.rec1{
-		width: 60vw;
-		height: 45vh;
-		position: absolute;
-		transform: translate(32%, 60%);
-	}
-
-	.context{
-		height: 45vh;
-		width: 60vw;
-		position: absolute;
-		transform: translate(40%, 65%);
-	}
-
-	#title1{
-		font-size: 3rem;
-	}
-	#intro{
-		font-size: 2.2rem;
-	}
-}
-
-
 
 /* CV Page -- layout*/
 #list{
@@ -337,6 +271,13 @@ hr{
 	font-size: 18px;
 }
 
+.padding{
+	font-family: 'Hind Guntur', sans-serif;
+	color: white;
+	padding-left: 20px;
+	font-size: 18px;
+}
+
 .information{
 	font-family: 'Hind Guntur';
 	color: white;
@@ -417,10 +358,6 @@ hr{
 .content{
 	padding-bottom: 2rem;
 } 
-
-@media (max-width: 991px){
-	
-}
 
 /* Contact Page */
 .font{
@@ -561,22 +498,7 @@ hr{
 	font-size: 18px;
 }
 
-@media (max-width: 991px){
-	.contact{
-		padding: 50px;
-	}
-	.container{
-		flex-direction: column;
-	}
-	.container .contactInfo{
-		margin-bottom: 40px;
-	}
-	.container .contactInfo,
-	.contactForm
-	{
-		width: 100%;
-	}
-}
+
 
 /* Work Page */
 #ToAll{
@@ -607,6 +529,7 @@ a.five:hover {text-decoration:underline;}
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
+	flex-direction: row;
 	flex-wrap: wrap;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
@@ -614,7 +537,7 @@ a.five:hover {text-decoration:underline;}
 }
 
 .col{
-	width: calc(25% - 2rem);
+	width: 270px;
 	margin: 1rem;
 	cursor: pointer;
 }
@@ -754,23 +677,247 @@ a.five:hover {text-decoration:underline;}
 	font-weight: 300;
 }
 
-@media screen and (max-width: 64rem){
-	.col{
-	  width: calc(33.333333% - 2rem);
+
+/* MEDIA QUARY */
+/* Home Page */
+@media only screen and (max-width: 1024px){
+	.topnav a{
+		font-size: 2.7em;
+		display: flex;
+		justify-content: center;
+
 	}
-  }
-  
-  @media screen and (max-width: 48rem){
-	.col{
-	  width: calc(50% - 2rem);
+	.image-box{
+		display:none;
 	}
-  }
-  
-  @media screen and (max-width: 32rem){
-	.col{
-	  width: 100%;
-	  margin: 0 0 2rem 0;
+
+	.container1{
+		position: absolute;
 	}
-  }
-  
+
+	#image11{
+		display: block;
+	}
+	.images{
+		width: 100vw;
+		height: 100vh;
+		display: grid;
+		position: absolute;
+		transform: translate(0%, 7%);
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"image1 image2 image2"
+		"image3 image3 image4"
+		"image5 image11 image11";
+	}
+
+	.background{
+		background-image: url(images/ALeq47.jpg);
+		background-size: cover;
+		opacity: 0.2;
+		display:block;
+		position: absolute;
+		transform: translate(0%, 7%);	
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.rec1{
+		width: 65vw;
+		height: 45vh;
+		position: absolute;
+		transform: translate(32%, 60%);
+	}
+
+	.context{
+		height: 45vh;
+		width: 65vw;
+		position: absolute;
+		transform: translate(40%, 65%);
+	}
+
+	#title1{
+		font-size: 3rem;
+	}
+	#intro{
+		font-size: 2.2rem;
+	}
+}
+
+/* CV Page */
+@media only screen and (max-width: 1024px){
+	.topnav a{
+		font-size: 2.7em;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	#list{
+		width: 7.5rem;
+		height: 20rem;
+		transform: translate(20%, 30%);
+	}
+
+	#list > img{
+		width: 5rem;
+	}
+
+	#rec2{
+		transform: translate(15%, 0%);
+		width: 50rem;
+		height: 50rem;
+	}
+
+	.input1{
+		width: 50rem;
+		height: 50rem;
+		transform: translate(22%, 5%);
+	}	
+
+	#image9{
+		width: 50rem;
+		height: 30rem;
+	}
+
+	#name{
+		font-size: 2rem;
+	}
+	
+	.right{
+		width: 46rem;
+		height: 78rem;
+		transform: translate(28%, 65%);
+	}
+
+	.title{
+		font-size: 4rem;
+		padding-top: 0.5em;
+	}
+
+	
+	hr{
+		color: white;
+		border-style: solid;
+		border-width: 0.3rem;
+		width: 90%;
+	}
+
+	.information{
+		font-size: 2rem;
+		padding: 1rem;
+	}
+
+	.sub-title{ 
+		font-size: 2rem;
+		padding: 1rem;
+	}
+
+	#Quick-Facts{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 4fr;
+		grid-template-areas: 
+		"age"
+		"school"
+		"address"
+		"phone";
+		margin-top: 10px;
+	}
+
+	#FunFacts{
+		display:grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 4fr;
+		grid-template-areas: 
+		"f1"
+		"f2"
+		"f3"
+		"f4";
+	}
+
+	#f1{grid-area: f1;}
+
+	#f2{grid-area: f2;}
+
+	#f3{grid-area: f3;}
+
+	#f4{grid-area: f4;}
+
+	#Education > h2{
+		font-size: 2rem;
+		padding-left: 3px;
+		border-style: solid;
+		width: 11rem;
+		height: 2rem;
+		margin-top: 2rem;
+		margin-left: 1rem;
+		margin-bottom: 1rem;;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.padding{
+		padding:0rem;
+		font-size: 2rem;
+		padding-left: 1rem;
+		padding-top: 2rem;
+	}
+
+}
+
+/* Contact Page */
+@media (max-width: 991px){
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactInfo{
+		margin-bottom: 40px;
+	}
+	.container .contactInfo,
+	.contactForm
+	{
+		width: 100%;
+	}
+}
+
+/* Work Page */
+@media screen and (max-width: 1024px){
+
+	.cols{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.col{
+		width: 100%;
+	}
+
+	#top{
+		font-size: 4rem;
+	}
+
+	.front,
+	.back{
+		height: 25rem;
+	}
+
+	.inner2{
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 32rem){
+	.col{
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+} 
+
+
+
 
